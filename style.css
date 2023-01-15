@@ -5,7 +5,7 @@
 }
 body{
     font-family: 'Work Sans', sans-serif;
-    background-color: #FF900E;
+    background-color: #225258;
 }
 a{
     text-decoration: none;
@@ -23,7 +23,7 @@ a{
 .nav-title{
     font-size: 30px;
     font-weight: 700;
-    color: #131313;
+    color: #ffffff;
     text-align: center;
     margin-top: 10px;
 }
@@ -41,10 +41,10 @@ nav ul li{
 nav ul li:last-child{
     margin-right: 0px;
     border: 1px solid;
-    border-color: #727272;
+    border-color: #ffffff;
 }
 nav ul li a{
-    color: #131313;
+    color: #ffffff;
     font-size: 18px;
     font-weight: 600px;
 }
@@ -53,20 +53,19 @@ nav ul li:hover{
     transition: 1s;
 }
 nav ul li:hover a{
-    color: white;
+    color: #ffffff;
 }
 /************Banner section***************/
 .banner{
     display: grid;
     grid-template-rows: auto;
-    padding-bottom: 30px;
 }
 .banner-detile{
     text-align: center;
     padding-top: 100px;
 }
 .banner-title{
-    color: #131313;
+    color: #ffffff;
     font-size: 64px;
     font-weight: 800;
     padding-bottom: 30px;
@@ -74,7 +73,7 @@ nav ul li:hover a{
 .banner-info{
     font-size: 16px;
     font-weight: 400;
-    color: #131313;
+    color: #ffffff;
     padding: 0px 272px;
 }
 .btn-primary{
@@ -329,12 +328,13 @@ nav ul li:hover a{
     padding: 50px 0px;
 }
 .footer-title{
-    color: #131313;
+    color: #ffffff;
     padding-bottom: 16px;
 }
 .footer-detile{
-    color: #131313;
+    color: #ffffff;
     padding-bottom: 16px;
+    line-height: 30px;
 }
 .social ul{
     display: flex;
