@@ -15,7 +15,7 @@ a{
     margin: 0 auto;
     position: relative;
 }
-/********************Navigation*************/
+/********************Navigation section*************/
 .navigation{
    display: flex;
    justify-content: space-between;
@@ -55,10 +55,11 @@ nav ul li:hover{
 nav ul li:hover a{
     color: white;
 }
-/************Banner Part***************/
+/************Banner section***************/
 .banner{
     display: grid;
     grid-template-rows: auto;
+    padding-bottom: 30px;
 }
 .banner-detile{
     text-align: center;
@@ -91,20 +92,204 @@ nav ul li:hover a{
     width: 100%;
     height: 700px;
 }
+/*****************Features section************/
+.fearures-container{
+    background-color: #ffffff;
+}
+.feature{
+    display: flex;
+    padding: 85px;
+}
+.Feature-images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 10px;
+}
+.image img{
+    width: 250px;
+    height: 250px;
+}
+.Feature-detile{
+    padding-left: 73px;
+    padding-top: 150px;
+}
+.feature-title{
+    color: #727272;
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 24px;
+}
+.title-color{
+    color: #FF900E;
+}
+.of-our{
+    color: #131313;
+}
+.feature-info{
+    padding-bottom: 50px;
+}
+.btn-feature {
+    width: 180px;
+    height: 64px;
+    border: none;
+    border-radius: 6px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #FF900E;
+}
+/******************Love & Enjoy Section**************************/
+.love-container{
+    background-color: #ffffff;
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    position: relative;
+}
+.love-content{
+    padding-right: 50px;
+    padding-top: 50px;
+}
+.love-title{
+    font-size: 40px;
+    font-weight: bold;
+    color: #131313;
+    padding-left: 20px;
+    padding-bottom: 24px;
+    border-left: 3px solid #FF900E;
+}
+.love-discription{
+    font-size: 16px;
+    font-weight: 400;
+    color: #727272;
+}
+.love-detile{
+    margin-top: 30px;
+}
+.enjoy-detile{
+    margin-bottom: 20px;
+    padding: 30px;
+}
+.enjoy-title{
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.love-images img{
+    width: 635px;
+    height: 900px;
+}
+.btn-enjoy{
+    font-size: 25px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #FF900E;
+    border: none;
+    border-radius: 6px;
+    width: 320px;
+    height: 180px;
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+}
+.btn-enjoy span{
+    font-size: 60px;
+    font-weight: bold;
+    color: #ffffff;
+}
+/*******************Some Fact Section*****************/
+.some-fact-container{
+    background-color: #ffffff;
+    padding-top: 130px;
+}
+.fact-title{
+    font-size: 45px;
+    font-weight: bold;
+    color: #131313;
+    padding-bottom: 30px;
+}
+.fact-discription{
+    font-size: 16px;
+    font-weight: normal;
+    color: #727272;
+}
+.fact-animation{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 120px;
+    padding-top: 70px;
+}
+.some-fact{
+    position: relative;
+    animation-name: some-fact;
+    animation-duration: 3s;  
+    animation-fill-mode: forwards;
+}
+
+@keyframes some-fact {
+    from  {left:0px; top:0px;}
+    to  {left:400px; top:200px;}
+  }
+.animation{
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 18px;
+    position: relative;
+    animation-name: animation;
+    animation-duration: 3s;  
+    animation-fill-mode: forwards;
+}
+@keyframes animation {
+    from {top: 0px;}
+    to {top: -200px;}
+}
+.animation img{
+    width: 45px;
+    height: 45px;
+}
+.animation h1{
+    font-size: 45px;
+    font-weight: 700;
+    color: #424242;
+}
+.animation p{
+    font-size: 20px;
+    font-weight: 600;
+    color: #727272;
+}
+
 /**************Media Quary*************/
 @media only screen and (max-width:576px){
     .navigation{
         display: grid;
-        grid-template-rows: auto;
-        position: relative;
+        justify-content: center;
     }
-    .nav-title{
-        position: absolute;
-        translate: 360px 0px;  
+    .nav-item ul{
+       flex-direction: column;
+       align-items: center;
     }
-    .nav-item ul li{
-        display: grid;
-        grid-template-rows: repeat(4, 1fr);
-        
+    .feature{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .Feature-detile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .feature-info{
+        padding: 0px 200px 50px 200px;
+        text-align: center;
+    }
+    .Feature-images{
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 30px;
+    }
+    .image img{
+        width: 750px;
+        height: 750px;
     }
 }
