@@ -240,7 +240,6 @@ nav ul li:hover a{
     padding: 18px;
 }
 .animation-1{
-    position: relative;
     border: 1px solid #FF900E;
     text-align: center;
     padding: 18px;
@@ -258,7 +257,7 @@ nav ul li:hover a{
     position: relative;
     border: 1px solid #FF900E;
     text-align: center;
-    padding: 45px;
+    padding: 18px;
     position: relative;
     animation-duration: 4s;
     animation-name: animation-2;
@@ -488,6 +487,12 @@ nav ul li:hover a{
         color: #ffffff;
     }
     .animation h1{
+        color: #ffffff;
+    }
+    .animation-1 h1{
+        color: #ffffff;
+    }
+    .animation-2 h1{
         color: #ffffff;
     }
     @keyframes some-fact {
